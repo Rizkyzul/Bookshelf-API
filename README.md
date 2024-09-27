@@ -21,11 +21,11 @@ namun jika ingin update terbaru dari node.js, hapi.js dan nanoid anda bisa mengi
         },
       };
 5. instal nanoid untuk mengenerate id secara acak dengan instalasi (npm i nanoid)
-6. buat file src sebagai resource dan buat file dengan nama : server.js, routes.js, handler.js, dan books.js
-7. masukan kode yang ada pada repository ini
+6. buat folder src sebagai resource untuk menampung file dan buat file dengan nama : server.js, routes.js, handler.js, dan books.js
+7. masukan kode yang ada pada repository di folder src. 
 8. jalankan kode dengan cara (npm run start)
 9. cek dengan metode CRUD pada POSTMAN dengan file yang sudah ada pada repository.
    anda hanya perlu mengImport file colletion dan Environment.
 10. lalukkan metode crud untuk menambah,melihat,mengupdaate dan menghapus buku.
 
-anda bisa mengganti Port sesuai dengan kebutuhan anda
+anda bisa mengganti Port sesuai dengan kebutuhan anda!

@@ -8,18 +8,28 @@ namun jika ingin update terbaru dari node.js, hapi.js dan nanoid anda bisa mengi
 1. hapus node_modules, package.json, package-lock.json dan eslintrc.json.
 2. instal ulang node js dengan instalasi (npm init --y)
 3. instal framework hapi.js dengan instalasi (npm install @hapi/hapi)
-4. instal Eslint dengan instalasi (npm install --save-dev eslint).
- 4.1.  membuat file pada folder dengan nama .eslintrc.js dengan kode sebagai berikut :
-          module.exports = {
-        extends: [
-          'eslint:recommended',
-          'plugin:hapi/recommended',
-        ],
-        parserOptions: {
-          ecmaVersion: 'latest',
-          sourceType: 'module',
-        },
-      };
+4. instal Eslint dengan instalasi (npm install --save-dev eslint-config-airbnb-base).
+
+     4.1.  membuat file pada folder dengan nama .eslintrc.js dengan kode sebagai berikut :
+            {
+                 "env": {
+                     "commonjs": true,
+                     "es2021": true,
+                     "node": true
+                 },
+                 "extends": [
+                     "airbnb-base"
+                 ],
+                 "parserOptions": {
+                     "ecmaVersion": 12
+                 },
+                 "rules": {
+                     "no-console": "off"
+                 }
+             }
+
+
+
 5. instal nanoid untuk mengenerate id secara acak dengan instalasi (npm i nanoid)
 6. buat folder src sebagai resource untuk menampung file dan buat file dengan nama : server.js, routes.js, handler.js, dan books.js
 7. masukan kode yang ada pada repository di folder src. 
